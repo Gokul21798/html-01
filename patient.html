@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="doc.js"></script>
+
+</head>
+<body>
+    <form name="myform" onsubmit="return validate_pat()" action="welcome.html">
+        <h1>PATIENT DETAILS</h1>
+        <label>First Name<span class="req">*</span> </label>
+        <input name="pname" type="text" pattern='[A-Za-z\\s]*' placeholder="Firstname" required>
+        <br>
+        <label>Last Name<span class="req">*</span> </label>
+        <input type="text" pattern='[A-Za-z\\s]*' placeholder="Lastname" required>
+        <br>
+        <label>DOB<span class="req">*</span> </label>
+        <input type="date" placeholder="DOB" required>
+        <br>
+        <label>Gender<span class="req">*</span> </label>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+        <br>
+        <label>Father/ Spouse name<span class="req">*</span> </label>
+        <input name="fname" type="text" pattern='[A-Za-z\\s]*' placeholder="name" required>
+        <br>
+        <label>Blood group<span class="req">*</span> </label>
+        <select>
+            <option>--Select--</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>B+</option>
+            <option>B-</option>
+        </select>
+        <br>
+        <label>Contact Number<span class="req">*</span></label>
+        <input name="num" type="number" placeholder="0000000000" required>
+        <br>
+        <label>Visited Earlier<span class="req">*</span> </label>
+        <input type="radio" name="visit"><label>Yes</label>
+        <input type="radio" name="visit"><label>No</label>
+        <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+</body>
+</html>

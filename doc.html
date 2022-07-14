@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="doc.js"></script>
+</head>
+<body>
+    <form name="myform" onsubmit="return validate_doc()" action="welcome.html">
+        <h1>DOCTOR DETAILS</h1>
+        <label>First Name<span class="req">*</span> </label>
+        <input name="fname" type="text" pattern='[A-Za-z\\s]*' placeholder="Firstname">
+        <br>
+        <label>Middle Name </label>
+        <input type="text" pattern='[A-Za-z\\s]*' placeholder="Middlename">
+        <br>
+        <label>Last Name<span class="req">*</span></label>
+        <input name="lname" type="text" pattern='[A-Za-z\\s]*' placeholder="Lastname">
+        <br>
+        <label>Registration number<span class="req">*</span> </label>
+        <input name="rno" type="number" placeholder="Registration number">
+        <br>
+        <label>DOB<span class="req">*</span> </label>
+        <input type="date" placeholder="DOB">
+        <br>
+        <label>Gender<span class="req">*</span> </label>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+        <br>
+        <label>Email<span class="req">*</span> </label>
+        <input type="Email" placeholder="abc@email.com">
+        <br>
+        <label>Specialization<span class="req">*</span> </label>
+        <input type="text" placeholder="Specialization">
+        <br>
+        <label>Qualification<span class="req">*</span> </label>
+        <input name="num" type="text" placeholder="Qualification">
+        <br>
+        <label>Contact Number<span class="req">*</span></label>
+        <input type="number" placeholder="0000000000">
+        <br>
+        <label>Address </label>
+        <input type="text" placeholder="Address">
+        <br>
+        <label>Visiting Time<span class="req">*</span> </label><br>
+        <input type="checkbox" name="day">Morning<br>
+        <input type="checkbox" name="day">Afternoon<br>
+        <input type="checkbox" name="day">Evening<br>
+        <br>
+        <label>Visiting Days<span class="req">*</span> </label><br>
+        <input type="checkbox" name="day">Monday<br>
+        <input type="checkbox" name="day">Tuesday<br>
+        <input type="checkbox" name="day">Wednesday<br>
+        <input type="checkbox" name="day">Thursday<br>
+        <input type="checkbox" name="day">Friday<br>
+        <input type="checkbox" name="day">Saturday<br>
+        <input type="checkbox" name="day">Sunday<br>
+        <br>
+        <label>No of patients per day<span class="req">*</span> </label>
+        <input type="text">
+        <br>
+        <label>Department no<span class="req">*</span> </label>
+        <input type="number" placeholder="Department no">
+        <br>
+        <button type="submit" >SUBMIT</button>
+    </form>
+
+</body>
+</html>

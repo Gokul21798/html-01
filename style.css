@@ -1,0 +1,58 @@
+body{
+    background: url("hbg.jpg");
+    background-size:cover;
+}
+h1{
+    text-align: center;
+    color:black;
+    font-weight: 1000;
+}
+.list{
+    border: 3px solid whitesmoke;
+    margin-left: 10%;
+    margin-right: 72%;
+    margin-top: 15%;
+}
+.welcome{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.content{
+    margin:15%;
+}
+.who{
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+    font-size: larger;
+}
+a:hover{
+    border:solid 2px whitesmoke;
+    color:whitesmoke;
+}
+.req{
+    color:red;
+}
+input{
+    margin: 20px;
+}
+label{
+    padding-left: 10px;
+}
+form{
+    background-color: rgb(180, 200, 206);
+    
+    border:solid 2px;
+    margin:10% 30%;
+}
+button{
+    margin: 5%;
+    margin-left:43%;
+    border-radius: 6px;
+    background-color: black;
+    color:white;
+    font-size: 120%;
+}
